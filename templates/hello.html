@@ -2,14 +2,16 @@
 <html>
 <head>
   <title>Hi There!</title>
+  <link rel="stylesheet" href="/static/madlibs.css">
+  <link href="https://fonts.googleapis.com/css?family=Dokdo" rel="stylesheet">
 </head>
 <body>
 
 <h1>Hi There!</h1>
 
-<form action="/greet">
-  What is your name? <input type="text" name="person">
-  <input type="submit">
+<form action="/greet" method="POST">
+  What is your name? <input type="text" name="person" class="textbox">
+  <input type="submit" class="cute_submit" value = "Submit">
 </form>
 
 </body>

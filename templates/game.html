@@ -2,28 +2,30 @@
 <html>
 <head>
   <title>Madlibs</title>
+  <link rel="stylesheet" href="/static/madlibs.css">
+  <link href="https://fonts.googleapis.com/css?family=Dokdo" rel="stylesheet">
 </head>
 <body>
-
+    Hello, please complete the following:
     <form action="/madlib">
-        Enter a name: <input type="text" name="entered_name">
+        Enter a name: <input type="text" class="textbox" name="entered_name" >
         <br>
-        Enter a color: <input type="text" name="entered_color">
+        Enter a color: <input type="text"class="textbox" name="entered_color">
         <br>
-        Enter a noun: <input type="text" name="entered_noun">
+        Enter a noun: <input type="text" class="textbox" name="entered_noun">
         <br>
-        Enter an adjective: <input type="text" name="entered_adjective">
+        Enter an adjective: <input type="text" class="textbox" name="entered_adjective">
         <br>
-        Enter an animal: <input type="text" name="entered_animal">
+        Enter an animal: <input type="text" class="textbox" name="entered_animal">
         <br>
         Select the weather:
-        <select name="weather">
+        <select name="weather" class="textbox">
             <option value="rainy"> Rainy day</option>
             <option value="sunnny"> Sunny day</option>
             <option value="cloudy"> Cloudy day</option>
         </select>
 
-  <input type="submit">
+  <input type="submit" class="cute_submit" value = "Submit">
     </form>
 </body>
 </html>

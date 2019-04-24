@@ -2,15 +2,17 @@
 <html>
 <head>
   <title>A Compliment</title>
+  <link rel="stylesheet" href="/static/madlibs.css">
+  <link href="https://fonts.googleapis.com/css?family=Dokdo" rel="stylesheet">
 </head>
 <body>
     Hi {{ person }}! I think you're {{ compliment }}!
     <br>
     <form action="/game">
-        Would you like to play a game?:
-        <input type="radio" name="yesno" value="yes">Yes 
+        Would you like to play a game?
+        <input type="radio" name="yesno" value="yes">Yes
         <input type="radio" name="yesno" value="no">No
-        <input type="submit">
+        <input type="submit" class="cute_submit" value = "Submit">
     </form>
 </body>
 </html>

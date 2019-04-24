@@ -47,13 +47,15 @@ def greet_person():
 def show_madlib_form():
     """Get user response to game play"""
     response = request.args.get("yesno")
+    player = request.args.get("person")
     if response == "no":
         return render_template("goodbye.html")
     else:
-        return render_template("game.html")
+        return render_template("game.html", person=player)
 
 @app.route('/madlib')
 def show_madlib():
+    player = request.args.get("person")
     name = request.args.get("entered_name")
     color = request.args.get("entered_color")
     noun = request.args.get("entered_noun")
@@ -62,6 +64,7 @@ def show_madlib():
     weather = request.args.get("weather")
 
     return render_template("madlib.html",
+                           person=player,
                            name=name,
                            color=color,
                            noun=noun,
